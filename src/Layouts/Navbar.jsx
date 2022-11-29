@@ -18,7 +18,7 @@ const Navbar = () => {
       <nav className='container flex justify-between mx-auto mb-4 p-4 pb-0 max-w-screen-xl'>
         <img
           className='h-12 w-12 rounded-full border-2 border-pantone'
-          src='../../src/assets/images/Navbar/logo.png'
+          src={content.logo.logo}
           alt='logo'
         />
         <ul className='flex items-center'>

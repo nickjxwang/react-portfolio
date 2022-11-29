@@ -1,3 +1,5 @@
+import { content } from '../Content'
+
 const Works = () => {
   return (
     <section className='w-full mb-10 pt-20 md:px-32' id='works'>
@@ -10,7 +12,7 @@ const Works = () => {
       <div className='flex flex-col items-center gap-20 p-4 md:flex-row md:justify-center md:gap-6'>
         <div className='group'>
           <div className='bg-zinc-800 rounded-3xl p-5 border-b-8 border-pantone/10 group-hover:drop-shadow-primary'>
-            <img src='./src/assets/images/Works/work-1.png' alt='' />
+            <img src={content.work1.work1} alt='' />
             <div className='flex flex-col gap-1 mt-2'>
               <h5 className='font-bold text-light_primary font-Poppins p-2'>
                 Music
@@ -33,7 +35,7 @@ const Works = () => {
         </div>
         <div className='group'>
           <div className='bg-zinc-800 rounded-3xl p-5 border-b-8 border-pantone/10 group-hover:drop-shadow-primary'>
-            <img src='./src/assets/images/Works/work-2.png' alt='' />
+            <img src={content.work2.work2} alt='' />
             <div className='flex flex-col gap-1 mt-2'>
               <h5 className='font-bold text-light_primary font-Poppins p-2'>
                 Website

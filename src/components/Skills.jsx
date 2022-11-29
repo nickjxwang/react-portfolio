@@ -1,3 +1,5 @@
+import { content } from '../Content'
+
 const Skills = () => {
   return (
     <section className='mb-10 pt-20 md:px-32' id='skills'>
@@ -23,7 +25,7 @@ const Skills = () => {
           <div className='w-full flex justify-between items-center px-8 md:px-4'>
             <div>
               <img
-                src='./src/assets/images/Skills/react.png'
+                src={content.react.react}
                 alt='...'
                 className='w-10 hover:scale-125 duration-200'
               />
@@ -36,7 +38,7 @@ const Skills = () => {
           <div className='w-full flex justify-between items-center px-8 md:px-4'>
             <div>
               <img
-                src='./src/assets/images/Skills/tailwind.png'
+                src={content.tailwind.tailwind}
                 alt='...'
                 className='w-10 hover:scale-125 duration-200'
               />
@@ -49,7 +51,7 @@ const Skills = () => {
           <div className='w-full flex justify-between items-center px-8 md:px-4'>
             <div>
               <img
-                src='./src/assets/images/Skills/git.png'
+                src={content.git.git}
                 alt='...'
                 className='w-10 hover:scale-125 duration-200'
               />
@@ -72,7 +74,7 @@ const Skills = () => {
           <div className='w-full flex justify-between items-center px-8 md:px-4'>
             <div>
               <img
-                src='./src/assets/images/Skills/blender.png'
+                src={content.blender.blender}
                 alt='...'
                 className='w-10 hover:scale-125 duration-200'
               />
@@ -85,7 +87,7 @@ const Skills = () => {
           <div className='w-full flex justify-between items-center px-8 md:px-4'>
             <div>
               <img
-                src='./src/assets/images/Skills/photoshop.png'
+                src={content.photoshop.photoshop}
                 alt='...'
                 className='w-10 hover:scale-125 duration-200'
               />
@@ -98,7 +100,7 @@ const Skills = () => {
           <div className='w-full flex justify-between items-center px-8 md:px-4'>
             <div>
               <img
-                src='./src/assets/images/Skills/unity.png'
+                src={content.unity.unity}
                 alt='...'
                 className='w-10 hover:scale-125 duration-200'
               />

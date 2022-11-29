@@ -4,9 +4,9 @@ const Footer = () => {
       <div className='h-[2px] bg-pantone/75 rounded-lg'></div>
       <div className='p-2 flex flex-col items-start justify-center'>
         <div className='pb-4'>
-          <h3 className='text-sm text-blueberry p-2 pb-0'>Email</h3>\
+          <h3 className='text-sm text-blueberry p-2'>Email</h3>
           <a href='mailto:nick.jxw@gmail.com'>
-            <h4 className='text-sm text-light_primary p-2 pt-0'>
+            <h4 className='text-sm text-light_primary p-2'>
               nick.jxw@gmail.com
             </h4>
           </a>
