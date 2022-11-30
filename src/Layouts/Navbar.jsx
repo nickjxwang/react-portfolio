@@ -15,15 +15,20 @@ const Navbar = () => {
 
   return (
     <div className='bg-dark_primary/40 fixed inset-x-0 top-0 left-0 z-[999]'>
-      <nav className='container flex justify-between mx-auto mb-4 p-4 pb-0 max-w-screen-xl'>
-        <img
-          className='h-12 w-12 rounded-full border-2 border-pantone'
-          src={content.logo.logo}
-          alt='logo'
-        />
+      <nav className='container flex justify-between items-center mx-auto mb-4 p-3 md:p-4 md:pb-0 max-w-screen-xl'>
+        <div className='w-14'>
+          <a href='#'>
+            <img
+              className='rounded-full border-2 border-pantone'
+              src={content.logo.logo}
+              alt='logo'
+            />
+          </a>
+        </div>
+
         <ul className='flex items-center'>
           <li>
-            <div className='text-3xl flex justify-center gap-4 px-10 text-light_primary'>
+            <div className='text-2xl flex justify-center gap-4 px-5 md:px-10 text-light_primary md:text-3xl'>
               <a
                 href='https://www.linkedin.com/in/chin-hsueh-wang/'
                 target='_blank'
@@ -48,22 +53,22 @@ const Navbar = () => {
           <li className='flex justify-center items-center'>
             <div
               className={` bg-dark_primary/40 cursor-pointer rounded-lg z-[999] ${
-                showMenu ? 'text-pantone' : 'text-white'
+                showMenu ? 'text-pantone' : 'text-light_primary'
               }  ml-6`}
               onClick={() => setShowMenu(!showMenu)}
             >
               <HiMenuAlt2 size={40} />
             </div>
             <div
-              className={`fixed z-[998] flex flex-col items-center gap-5 bg-dark_primary/40 px-2 py-3 ml-6 backdrop-blur-md rounded-full text-blueberry/80 right-[50%-768px] duration-300 ${
-                showMenu ? 'top-20' : 'top-[-100%]'
+              className={`fixed w-[340px] z-[998] flex items-center justify-center gap-2 bg-dark_primary/40 backdrop-blur-md rounded-full text-light_primary left-[50%] -ml-[170px] duration-300 ${
+                showMenu ? 'bottom-10' : 'bottom-[-100%]'
               }`}
             >
               {nav.map((item, i) => (
                 <a key={i} href={item.link} onClick={() => setActive(i)}>
                   <div
-                    className={`text-[10px] p-2 border-2 rounded-md sm:cursor-pointer ${
-                      i === active && 'border-pantone text-light_primary'
+                    className={`text-md p-2 rounded-md sm:cursor-pointer ${
+                      i === active && 'text-pantone '
                     } `}
                   >
                     {item.name}

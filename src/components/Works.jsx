@@ -17,7 +17,7 @@ const Works = () => {
               <h5 className='font-bold text-light_primary font-Poppins p-2'>
                 Music
               </h5>
-              <ul className='w-100% flex justify-around items-center text-light_primary/50 gap-2 p-2 mb-4'>
+              <ul className='w-100% flex justify-around items-center text-light_primary/80 gap-2 p-2 mb-4'>
                 <li>React</li>
                 <li>Tailwind</li>
                 <li>RapidApi</li>
@@ -40,7 +40,7 @@ const Works = () => {
               <h5 className='font-bold text-light_primary font-Poppins p-2'>
                 Website
               </h5>
-              <ul className='w-100 flex justify-around items-center text-light_primary/50 gap-12 p-2 mb-4'>
+              <ul className='w-100 flex justify-around items-center text-light_primary/80 gap-12 p-2 mb-4'>
                 <li>JavaScript</li>
                 <li>Tailwind</li>
               </ul>
