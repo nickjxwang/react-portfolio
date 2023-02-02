@@ -161,7 +161,7 @@ const Works = () => {
             <div className='absolute bottom-0 left-0 right-0 top-0 h-full flex flex-col items-center justify-around gap-8 py-6 lg:gap-16'>
               <div
                 className='absolute top-0 left-0 w-full h-full bg-dark_primary/50 backdrop-blur-sm transition opacity-0 duration-300 ease-in-out rounded-xl group-hover:opacity-100'
-                onClick={() => setShowDetail(!showDetail)}
+                onClick={() => setShowDetail1(!showDetail1)}
               ></div>
               <h3 className='text-lg pt-4 z-20 lg:text-xl opacity-0 transition duration-300 ease-in-out group-hover:opacity-100 lg:pt-6'>
                 Website
