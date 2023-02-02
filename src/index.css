@@ -1,9 +1,9 @@
 /* Inria serif */
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap'); */
 /* Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 /* Paprika */
-@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
@@ -23,13 +23,13 @@
   h6,
   p,
   span {
-    @apply text-dark_primary;
+    @apply text-light_primary;
   }
   h1 {
     @apply font-FiraCode lg:text-6xl text-3xl font-extrabold;
   }
   h2 {
-    @apply font-Paprika text-5xl font-bold;
+    @apply font-FiraCode text-5xl font-medium;
   }
   h3 {
     @apply font-FiraCode text-3xl;
@@ -37,25 +37,45 @@
   h4 {
     @apply md:text-4xl text-lg !leading-relaxed font-FiraCode;
   }
+  h5 {
+    @apply font-FiraCode;
+  }
   h6 {
-    @apply font-FiraCode font-bold text-[#253D57] leading-8;
+    @apply font-FiraCode font-bold text-light_primary leading-8;
+  }
+
+  @layer components {
+    /* .grid_col {
+      display: grid;
+      grid-template-rows: 35% 50%;
+      gap: 15%;
+    }
+    .anima {
+      transform: rotate(0);
+    }
+    .about_me {
+      width: 65%;
+      r
+      display: grid;
+      place-items: center;
+    } */
   }
 
   p {
-    @apply font-Poppins text-[0.95rem];
+    @apply font-FiraCode;
   }
   button {
-    @apply font-Poppins;
+    @apply font-FiraCode;
   }
   input,
   textarea {
-    @apply bg-transparent outline-none font-Poppins;
+    @apply w-full bg-transparent p-4 rounded-lg border-2 border-blueberry font-FiraCode outline-none focus:outline-none focus:ring focus:border-pantone;
   }
 }
 
 @layer utilities {
   .btn {
-    @apply py-2 px-9 border-2 rounded-md border-dark_primary rounded-br-3xl font-medium;
+    @apply bg-blueberry  text-light_primary border-2 border-dark_primary transition duration-300 ease-in-out hover:bg-pantone hover:text-dark_primary px-4 py-3 rounded-md;
   }
 }
 

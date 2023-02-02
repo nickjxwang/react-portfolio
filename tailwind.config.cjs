@@ -23,6 +23,7 @@ module.exports = {
     extend: {
       colors: {
         dark_primary: '#0F1624',
+        dark_variant: '#3E444F',
         light_primary: '#F5F5F5',
         blueberry: '#687A8F',
         pantone: '#64CCC9',

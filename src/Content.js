@@ -1,4 +1,5 @@
 // import images
+import Avatar from './assets/images/About/IMG_1906.png'
 import Logo from './assets/images/Navbar/logo.png'
 import Blender from './assets/images/Skills/blender.png'
 import Git from './assets/images/Skills/git.png'
@@ -9,23 +10,13 @@ import Unity from './assets/images/Skills/unity.png'
 import Work1 from './assets/images/Works/work-1.png'
 import Work2 from './assets/images/Works/work-2.png'
 
-// import icons from react-icons
-import { BiUser } from 'react-icons/bi'
-import { BsInstagram } from 'react-icons/bs'
-import { GrMail } from 'react-icons/gr'
-import {
-  MdArrowForward,
-  MdCall,
-  MdOutlinePermContactCalendar,
-} from 'react-icons/md'
-import { RiProjectorLine, RiServiceLine } from 'react-icons/ri'
-import { TbSmartHome } from 'react-icons/tb'
+import { AiOutlineHome } from 'react-icons/ai'
 
 export const content = {
   nav: [
     {
       link: '#home',
-      name: 'HOME',
+      icon: AiOutlineHome,
     },
     {
       link: '#skills',
@@ -66,5 +57,8 @@ export const content = {
   },
   work2: {
     work2: Work2,
+  },
+  avatar: {
+    avatar: Avatar,
   },
 }
