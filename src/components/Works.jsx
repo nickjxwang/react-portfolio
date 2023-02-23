@@ -49,19 +49,21 @@ const Works = () => {
                 <div className='flex flex-col items-start justify-center gap-4 py-2'>
                   <h5 className='text-sm font-bold lg:text-lg'>Challenge: </h5>
                   <p className='text-sm lg:text-lg'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nulla officia at eos quae voluptas voluptates, animi fugit
-                    in consequatur odit ratione labore ipsam, modi incidunt.
-                    Veniam dolores commodi quos eos!
+                    The biggest challenge encountered in this project is that it
+                    is the first time using RapidAPI technology for development,
+                    so it will require some time to learn and explore this
+                    technology.
                   </p>
                 </div>
                 <div className='flex flex-col items-start justify-center gap-4 pt-2'>
                   <h5 className='text-sm font-bold lg:text-lg'>Conclusion: </h5>
                   <p className='text-sm lg:text-lg'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nulla officia at eos quae voluptas voluptates, animi fugit
-                    in consequatur odit ratione labore ipsam, modi incidunt.
-                    Veniam dolores commodi quos eos!
+                    The goal of this project is to learn and master RapidAPI
+                    technology while facing and overcoming the challenges
+                    encountered during development, and gaining valuable skills
+                    that will benefit me in future projects. Throughout the
+                    process, I will also be learning how to find appropriate
+                    solutions when encountering problems.
                   </p>
                 </div>
               </div>
@@ -96,27 +98,40 @@ const Works = () => {
                     Description:{' '}
                   </h5>
                   <p className='text-sm lg:text-lg'>
-                    Using React to build a music website. Through Rapid API
-                    makes this website can play and search music like Spotify.
-                    This project will show my skills as font-end developer.
+                    This website has been developed using React and Tailwind.
+                    React's component architecture makes website development
+                    easier to manage and maintain, while Tailwind's style
+                    configuration makes website construction more flexible and
+                    personalized. When using React and Tailwind to develop a
+                    website, we can accelerate the development process through
+                    React's ecosystem and Tailwind's component library. We can
+                    leverage React's powerful features to achieve rich
+                    interactive effects and find suitable styles from Tailwind's
+                    style library to add a nice look to the site.
                   </p>
                 </div>
                 <div className='flex flex-col items-start justify-center gap-4 py-2'>
                   <h5 className='text-sm font-bold lg:text-lg'>Challenge: </h5>
                   <p className='text-sm lg:text-lg'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nulla officia at eos quae voluptas voluptates, animi fugit
-                    in consequatur odit ratione labore ipsam, modi incidunt.
-                    Veniam dolores commodi quos eos!
+                    The biggest challenge I faced was using Tailwind, a new CSS
+                    framework. I needed to spend time getting familiar with its
+                    styles and syntax. However, Tailwind's design system is
+                    pre-configured, so it took some time and effort to customize
+                    the design to suit my needs. Learning and mastering Tailwind
+                    still requires time and effort.
                   </p>
                 </div>
                 <div className='flex flex-col items-start justify-center gap-4 pt-2'>
                   <h5 className='text-sm font-bold lg:text-lg'>Conclusion: </h5>
                   <p className='text-sm lg:text-lg'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nulla officia at eos quae voluptas voluptates, animi fugit
-                    in consequatur odit ratione labore ipsam, modi incidunt.
-                    Veniam dolores commodi quos eos!
+                    In conclusion, the combination of React and Tailwind makes
+                    website development easier, faster, and more efficient.
+                    While using Tailwind as a new CSS framework presented a
+                    significant challenge that required time and effort to
+                    overcome, its pre-configured design system ultimately helped
+                    to streamline the process of customizing the design to my
+                    specific needs. However, achieving mastery of Tailwind still
+                    requires continued learning and dedication.
                   </p>
                 </div>
               </div>
