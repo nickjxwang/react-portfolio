@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { content } from './Content'
 import About from './Layouts/About'
 import Contact from './Layouts/Contact'
@@ -25,7 +25,7 @@ const App = () => {
   }
 
   return (
-    <Router>
+    <BrowserRouter>
       <ScrollToTop />
       <Navbar
         setActivePath={setActivePath}
@@ -40,16 +40,16 @@ const App = () => {
             path='/'
             element={<Hero setActivePath={setActivePath} />}
           />
-          <Route path='about' element={<About />} />
-          <Route path='projects' element={<Projects />} />
-          <Route path='contact' element={<Contact />} />
-          <Route path='ProjectDetail' element={<ProjectDetail />} />
-          <Route path='ProjectDetail1' element={<ProjectDetail1 />} />
-          <Route path='ProjectDetail2' element={<ProjectDetail2 />} />
-          <Route path='ProjectDetail3' element={<ProjectDetail3 />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/ProjectDetail' element={<ProjectDetail />} />
+          <Route path='/ProjectDetail1' element={<ProjectDetail1 />} />
+          <Route path='/ProjectDetail2' element={<ProjectDetail2 />} />
+          <Route path='/ProjectDetail3' element={<ProjectDetail3 />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   )
 }
 
