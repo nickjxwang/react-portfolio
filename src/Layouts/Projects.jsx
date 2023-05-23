@@ -5,6 +5,11 @@ import Footer from '../Layouts/Footer'
 import Project from '../components/Project'
 import ProjectUnity from '../components/ProjectUnity'
 import ProjectDetail from './ProjectDetails/ProjectDetail'
+// import { projects } from '../src/Content.js'
+import Work1 from '../assets/images/Works/work-1.png'
+import Work2 from '../assets/images/Works/work-2.png'
+import Work3 from '../assets/images/Works/work-3.png'
+import Work4 from '../assets/images/Works/work-4.png'
 
 const Projects = () => {
   const [showDetail, setShowDetail] = useState(false)
@@ -28,7 +33,7 @@ const Projects = () => {
         <div className='col-span-12 z-10 xl:col-span-6'>
           <Project
             title='Music Web Application'
-            img='/src/assets/images/Works/work-1.png'
+            img={Work1}
             link='https://react-music-f851c.web.app'
             github='https://github.com/nickjxwang/react-music'
             type='Website'
@@ -39,7 +44,7 @@ const Projects = () => {
         <div className='col-span-12 z-10 xl:col-span-6'>
           <Project
             title='Personal Website'
-            img='/src/assets/images/Works/work-2.png'
+            img={Work2}
             link='https://chinhsuehwang.com'
             github='https://github.com/nickjxwang/react-portfolio'
             type='Website'
@@ -56,7 +61,7 @@ const Projects = () => {
         <div className='col-span-12 z-10 xl:col-span-6'>
           <ProjectUnity
             title='Monster Battle AR Game'
-            img='/src/assets/images/Works/work-3.png'
+            img={Work3}
             link='/'
             type='AR Game'
             detail='/ProjectDetail2'
@@ -67,7 +72,7 @@ const Projects = () => {
         <div className='col-span-12 z-10 xl:col-span-6'>
           <ProjectUnity
             title='AR Clothing'
-            img='/src/assets/images/Works/work-4.png'
+            img={Work4}
             link='/'
             type='AR Application'
             detail='/ProjectDetail3'
