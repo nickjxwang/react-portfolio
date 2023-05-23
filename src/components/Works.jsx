@@ -7,10 +7,10 @@ const Works = () => {
   const [showDetail1, setShowDetail1] = useState(false)
 
   return (
-    <section className=' w-full mb-10 pt-20 md:px-32' id='works'>
-      <div className=''>
+    <section className='w-full mb-10 pt-32 md:px-32' id='works'>
+      <div className='mb-10'>
         <div className='w-[64px] h-[6px] bg-gradient-to-r from-pantone to-blueberry rounded-lg mb-5' />
-        <h3 className='font-bold text-light_primary/80'>Projects</h3>
+        <h3 className='font-bold text-light_primary/80'>Works</h3>
       </div>
 
       <br />
@@ -204,6 +204,23 @@ const Works = () => {
         </div>
       </div>
     </section>
+    // {/* <section className='w-full mb-10 pt-32 md:px-32' id='works'>
+    //   <div className='mb-10'>
+    //     <div className='w-[64px] h-[6px] bg-gradient-to-r from-pantone to-blueberry rounded-lg mb-5' />
+    //     <h3 className='font-bold font-Poppins text-light_primary/80'>
+    //       Projects
+    //     </h3>
+    //   </div>
+    //   <div className='grid grid-cols-12 gap-24 p-4'>
+    //     <div className='col-span-12 text-light_primary'>Feature Project</div>
+    //     <div className='col-span-12 text-light_primary md:col-span-6'>
+    //       Project1
+    //     </div>
+    //     <div className='col-span-12 text-light_primary md:col-span-6'>
+    //       Project2
+    //     </div>
+    //   </div>
+    // </section> */}
   )
 }
 

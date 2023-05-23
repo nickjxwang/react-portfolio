@@ -1,11 +1,12 @@
 /* Inria serif */
 /* @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap'); */
 /* Poppins */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* Paprika */
 /* @import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap'); */
 
 @tailwind base;
 @tailwind components;
@@ -14,6 +15,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    background-color: #0f1624;
   }
   h1,
   h2,
@@ -26,22 +28,22 @@
     @apply text-light_primary;
   }
   h1 {
-    @apply font-FiraCode lg:text-6xl text-3xl font-extrabold;
+    @apply font-Poppins lg:text-6xl text-3xl font-extrabold;
   }
   h2 {
-    @apply font-FiraCode text-5xl font-medium;
+    @apply font-Poppins text-5xl;
   }
   h3 {
-    @apply font-FiraCode text-3xl;
+    @apply font-Poppins text-3xl;
   }
   h4 {
-    @apply md:text-4xl text-lg !leading-relaxed font-FiraCode;
+    @apply md:text-4xl text-lg !leading-relaxed font-Poppins;
   }
   h5 {
-    @apply font-FiraCode;
+    @apply font-Poppins;
   }
   h6 {
-    @apply font-FiraCode font-bold text-light_primary leading-8;
+    @apply font-Poppins text-lg text-light_primary/80 leading-8;
   }
 
   @layer components {
@@ -62,20 +64,20 @@
   }
 
   p {
-    @apply font-FiraCode;
+    @apply font-Poppins;
   }
   button {
-    @apply font-FiraCode;
+    @apply font-Poppins;
   }
   input,
   textarea {
-    @apply w-full bg-transparent p-4 rounded-lg border-2 border-blueberry font-FiraCode outline-none focus:outline-none focus:ring focus:border-pantone;
+    @apply w-full bg-transparent p-4 rounded-lg border-2 border-blueberry font-Poppins outline-none focus:outline-none focus:ring focus:border-pantone;
   }
 }
 
 @layer utilities {
   .btn {
-    @apply bg-blueberry  text-light_primary border-2 border-dark_primary transition duration-300 ease-in-out hover:bg-pantone hover:text-dark_primary px-4 py-3 rounded-md;
+    @apply bg-blueberry  text-light_primary/80 border-2 border-dark_primary transition duration-300 ease-in-out hover:bg-pantone hover:text-dark_primary px-4 py-3 rounded-md;
   }
 }
 

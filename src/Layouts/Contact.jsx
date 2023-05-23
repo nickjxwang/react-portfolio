@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
+import Footer from './Footer'
 
 const Contact = () => {
   const form = useRef()
@@ -18,12 +19,13 @@ const Contact = () => {
   }
 
   return (
-    <section className='w-full mb-10 pt-20 md:px-32' id='contact'>
-      <div className=''>
+    <section className='w-full pt-28 md:px-32' id='contact'>
+      <div className='mb-20'>
         <div className='w-[64px] h-[6px] bg-gradient-to-r from-pantone to-blueberry rounded-lg mb-5' />
-        <h3 className='font-bold text-light_primary/80'>Contact</h3>
+        <h3 className='text-2xl font-bold font-Poppins text-light_primary/80 md:text-3xl'>
+          Contact
+        </h3>
       </div>
-      <br />
 
       <form
         ref={form}
@@ -34,15 +36,19 @@ const Contact = () => {
           className=''
           type='text'
           name='name'
-          placeholder='Your Full Name'
+          placeholder='Your name'
           required
         />
-        <input type='email' name='email' placeholder='Your Email' required />
-        <textarea name='message' rows='7' placeholder='Your Message' required />
+        <input type='email' name='email' placeholder='Your email' required />
+        <textarea name='message' rows='7' placeholder='Your message' required />
         <button className='btn' type='submit'>
           Send Message
         </button>
       </form>
+
+      <div className='absolute -bottom-1 left-0 right-0'>
+        <Footer />
+      </div>
     </section>
   )
 }

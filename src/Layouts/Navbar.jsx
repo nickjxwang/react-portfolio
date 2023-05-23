@@ -1,4 +1,4 @@
-import { createElement, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -8,34 +8,59 @@ import {
 } from 'react-icons/ai'
 import { CgToolbarBottom } from 'react-icons/cg'
 import { HiMenuAlt2 } from 'react-icons/hi'
-import { content } from '../Content'
+import { Link, NavLink, useLocation } from 'react-router-dom'
+import { content, links } from '../Content'
 
 import { AiOutlineHome } from 'react-icons/ai'
 import HeaderSocial from '../components/HeaderSocial'
 
-const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false)
-  const [active, setActive] = useState('#home')
+const Navbar = ({ setActivePath, activePath, showMenu, setShowMenu }) => {
+  const location = useLocation()
+
+  useEffect(() => {
+    setActivePath(location.pathname)
+  }, [])
 
   return (
-    <div className='bg-dark_primary/40 fixed inset-x-0 top-0 left-0 z-[999]'>
-      <nav className='container flex justify-between items-center mx-auto p-3 md:p-4 md:pb-0 max-w-screen-xl'>
+    <div className='bg-dark_primary/80 fixed p-2 inset-x-0 top-0 left-0 z-[999]'>
+      <nav className='container flex justify-between items-center mx-auto p-3 md:max-w-screen-xl'>
         <div className='w-14'>
-          <a href='#'>
+          <Link to='/'>
             <img
               className='rounded-full border-2 border-pantone'
               src={content.logo.logo}
               alt='logo'
             />
-          </a>
-          <div className='md:fixed bottom-0 '>
+          </Link>
+          <div className='md:fixed bottom-0'>
             <div className='hidden md:inline-block'>
               <HeaderSocial />
             </div>
           </div>
         </div>
 
-        <ul className='flex items-center'>
+        <ul className='hidden items-center gap-8 md:flex'>
+          {links.map(({ name, path, active }) => {
+            return (
+              <li key={name}>
+                <NavLink
+                  to={path}
+                  onClick={() => setActivePath(path)}
+                  className='relative group font-Poppins text-lg cursor-pointer text-light_primary/80 hover:text-pantone'
+                >
+                  {name}
+                  <span
+                    className={`absolute inline-block -bottom-[0.2rem] left-0 right-0 mx-auto h-[0.1rem] bg-pantone rounded-full group-hover:w-10 transition-[width] duration-300 ${
+                      activePath === path ? 'w-10' : 'w-0'
+                    }`}
+                  ></span>
+                </NavLink>
+              </li>
+            )
+          })}
+        </ul>
+
+        <ul className='flex items-center md:hidden'>
           <li className='relative md:hidden'>
             <HeaderSocial />
           </li>
@@ -57,51 +82,70 @@ const Navbar = () => {
                 className={`flex flex-col items-center justify-between gap-4 text-2xl `}
               >
                 <li>
-                  <a
-                    href='#home'
-                    onClick={() => setActive('#home')}
-                    className={active === '#home' ? 'text-pantone' : ''}
+                  <NavLink
+                    to='/'
+                    onClick={() => setActivePath('/')}
+                    className={`${
+                      location.pathname === '/' ? 'text-pantone' : ''
+                    }`}
                   >
                     <AiOutlineHome />
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    href='#about'
-                    onClick={() => setActive('#about')}
-                    className={active === '#about' && 'text-pantone'}
+                  <NavLink
+                    to='/about'
+                    onClick={() => setActivePath('/about')}
+                    className={`${
+                      location.pathname === '/about' ? 'text-pantone' : ''
+                    }`}
                   >
                     <AiOutlineUser />
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    href='#skills'
-                    onClick={() => setActive('#skills')}
-                    className={active === '#skills' && 'text-pantone'}
-                  >
-                    <CgToolbarBottom />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='#works'
-                    onClick={() => setActive('#works')}
-                    className={active === '#works' && 'text-pantone'}
+                  <NavLink
+                    to='/projects'
+                    onClick={() => setActivePath('/projects')}
+                    className={`${
+                      location.pathname === '/projects' ? 'text-pantone' : ''
+                    }`}
                   >
                     <AiOutlineCodeSandbox />
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    href='#contact'
-                    onClick={() => setActive('#contact')}
-                    className={active === '#contact' && 'text-pantone'}
+                  <NavLink
+                    to='/contact'
+                    onClick={() => setActivePath('/contact')}
+                    className={`${
+                      location.pathname === '/contact' ? 'text-pantone' : ''
+                    }`}
                   >
                     <AiOutlineMail />
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
+
+              {/* <ul
+                className={`flex flex-col items-center justify-between gap-4 text-2xl `}
+              >
+                {links.map(({ name, path, icon }) => {
+                  return (
+                    <li key={name}>
+                      <NavLink
+                        to={path}
+                        onClick={() => handleNavLinkClick(path)}
+                        className={`${
+                          location.pathname === path ? 'text-pantone' : ''
+                        }`}
+                      >
+                        {icon}
+                      </NavLink>
+                    </li>
+                  )
+                })}
+              </ul> */}
             </div>
           </li>
         </ul>

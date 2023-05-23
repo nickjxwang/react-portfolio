@@ -9,8 +9,17 @@ import Tailwind from './assets/images/Skills/tailwind.png'
 import Unity from './assets/images/Skills/unity.png'
 import Work1 from './assets/images/Works/work-1.png'
 import Work2 from './assets/images/Works/work-2.png'
+import Work3 from './assets/images/Works/work-3.png'
+import Work4 from './assets/images/Works/work-4.png'
 
-import { AiOutlineHome } from 'react-icons/ai'
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineCodeSandbox,
+  AiOutlineHome,
+  AiOutlineMail,
+  AiOutlineUser,
+} from 'react-icons/ai'
 
 export const content = {
   nav: [
@@ -62,3 +71,55 @@ export const content = {
     avatar: Avatar,
   },
 }
+
+export const links = [
+  {
+    name: 'Home',
+    path: '/',
+    active: '#home',
+    icon: AiOutlineHome,
+  },
+  {
+    name: 'About',
+    path: '/about',
+    active: '#about',
+    icon: AiOutlineUser,
+  },
+  {
+    name: 'Projects',
+    path: '/projects',
+    active: '#projects',
+    icon: AiOutlineCodeSandbox,
+  },
+  {
+    name: 'Contact',
+    path: '/contact',
+    active: '#contact',
+    icon: AiOutlineMail,
+  },
+]
+
+export const projects = [
+  {
+    name: 'Music Web Application',
+    types: ['#React', '#TailwindCSS', '#RapidAPI'],
+    img: Work1,
+  },
+  {
+    name: 'Personal Website',
+    types: ['#React', '#TailwindCSS'],
+    img: Work2,
+  },
+  {
+    name: 'Monster Battle AR Game',
+    types: ['#Unity', '#Vuforia'],
+    img: Work3,
+    video: 'https://www.youtube.com/embed/lwDSuDfKlIo',
+  },
+  {
+    name: 'AR Clothing',
+    types: ['#Unity', '#Vuforia'],
+    img: Work4,
+    video: 'https://www.youtube.com/embed/jSQUVWTtPJI',
+  },
+]
