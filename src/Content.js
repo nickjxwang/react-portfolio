@@ -1,5 +1,5 @@
 // import images
-import Avatar from './assets/images/About/IMG_1906.png'
+import Avatar from './assets/images/About/IMG_1906.webp'
 import Logo from './assets/images/Navbar/logo.png'
 import Blender from './assets/images/Skills/blender.png'
 import Git from './assets/images/Skills/git.png'
@@ -7,10 +7,10 @@ import Photoshop from './assets/images/Skills/photoshop.png'
 import React from './assets/images/Skills/react.png'
 import Tailwind from './assets/images/Skills/tailwind.png'
 import Unity from './assets/images/Skills/unity.png'
-import Work1 from './assets/images/Works/work-1.png'
-import Work2 from './assets/images/Works/work-2.png'
-import Work3 from './assets/images/Works/work-3.png'
-import Work4 from './assets/images/Works/work-4.png'
+import Work1 from './assets/images/Works/work-1.webp'
+import Work2 from './assets/images/Works/work-2.webp'
+import Work3 from './assets/images/Works/work-3.webp'
+import Work4 from './assets/images/Works/work-4.webp'
 
 import {
   AiFillGithub,

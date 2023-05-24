@@ -30,7 +30,7 @@ module.exports = {
       },
       backgroundImage: {
         primaryLinear: 'linear-gradient(180deg, #B6CCF5 0.48%, #D5E3F1 100%)',
-        'hero-pattern': "url('/src/assets/images/Hero/2.png')",
+        'hero-pattern': "url('/src/assets/images/Hero/hero.webp')",
       },
       dropShadow: {
         primary: '-2px 2px 10px rgba(223, 229, 236, 0.9)',

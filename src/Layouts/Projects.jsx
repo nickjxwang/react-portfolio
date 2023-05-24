@@ -6,10 +6,10 @@ import Project from '../components/Project'
 import ProjectUnity from '../components/ProjectUnity'
 import ProjectDetail from './ProjectDetails/ProjectDetail'
 // import { projects } from '../src/Content.js'
-import Work1 from '../assets/images/Works/work-1.png'
-import Work2 from '../assets/images/Works/work-2.png'
-import Work3 from '../assets/images/Works/work-3.png'
-import Work4 from '../assets/images/Works/work-4.png'
+import Work1 from '../assets/images/Works/work-1.webp'
+import Work2 from '../assets/images/Works/work-2.webp'
+import Work3 from '../assets/images/Works/work-3.webp'
+import Work4 from '../assets/images/Works/work-4.webp'
 
 const Projects = () => {
   const [showDetail, setShowDetail] = useState(false)
