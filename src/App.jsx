@@ -42,11 +42,20 @@ const App = () => {
           />
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
+          <Route
+            path='/projects/musicWebApplication'
+            element={<ProjectDetail />}
+          />
+          <Route
+            path='/projects/personalWebsite'
+            element={<ProjectDetail1 />}
+          />
+          <Route
+            path='/projects/monsterBattleARGame'
+            element={<ProjectDetail2 />}
+          />
+          <Route path='/projects/ARClothing' element={<ProjectDetail3 />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/ProjectDetail' element={<ProjectDetail />} />
-          <Route path='/ProjectDetail1' element={<ProjectDetail1 />} />
-          <Route path='/ProjectDetail2' element={<ProjectDetail2 />} />
-          <Route path='/ProjectDetail3' element={<ProjectDetail3 />} />
         </Routes>
       </div>
     </BrowserRouter>

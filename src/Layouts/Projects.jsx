@@ -37,7 +37,7 @@ const Projects = () => {
             link='https://react-music-f851c.web.app'
             github='https://github.com/nickjxwang/react-music'
             type='Website'
-            detail='/ProjectDetail'
+            detail='/projects/musicWebApplication'
           />
         </div>
 
@@ -48,7 +48,7 @@ const Projects = () => {
             link='https://chinhsuehwang.com'
             github='https://github.com/nickjxwang/react-portfolio'
             type='Website'
-            detail='/ProjectDetail1'
+            detail='/projects/personalWebsite'
           />
         </div>
 
@@ -64,7 +64,7 @@ const Projects = () => {
             img={Work3}
             link='/'
             type='AR Game'
-            detail='/ProjectDetail2'
+            detail='/projects/monsterBattleARGame'
             youtube='https://www.youtube.com/embed/lwDSuDfKlIo'
           />
         </div>
@@ -75,7 +75,7 @@ const Projects = () => {
             img={Work4}
             link='/'
             type='AR Application'
-            detail='/ProjectDetail3'
+            detail='/projects/ARClothing'
             youtube='https://www.youtube.com/embed/jSQUVWTtPJI'
           />
         </div>

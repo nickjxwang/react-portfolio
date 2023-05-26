@@ -1,11 +1,18 @@
+import { AiOutlineArrowLeft } from 'react-icons/ai'
 import DetailContent from '../../components/DetailContent'
 import DetailHero from '../../components/DetailHero'
 import Footer from '../Footer'
 import { projects } from '/src/Content.js'
 
 const ProjectDetail = () => {
+  // const history = createBrowserHistory()
+
   return (
     <section className='h-screen pt-28 md:px-32'>
+      {/* <div className='text-white text-3xl mb-5'>
+        <AiOutlineArrowLeft className='cursor-pointer hover:text-pantone ' />
+      </div> */}
+
       <DetailHero
         name={projects[0].name}
         types={projects[0].types}
