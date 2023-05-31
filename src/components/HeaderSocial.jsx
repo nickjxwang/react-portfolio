@@ -1,19 +1,20 @@
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 const HeaderSocial = () => {
   return (
     <div className='text-2xl flex justify-center items-center gap-4 text-blueberry md:pl-[13px] md:text-3xl md:flex-col'>
-      <a href='https://www.linkedin.com/in/chin-hsueh-wang/' target='_blank'>
+      <Link to='https://www.linkedin.com/in/nwang15/' target='_blank'>
         <AiFillLinkedin className='transition-all duration-300  hover:text-pantone hover:scale-125 cursor-pointer' />
-      </a>
+      </Link>
 
-      <a href='https://github.com/nickjxwang' target='_blank'>
+      <Link to='https://github.com/nickjxwang' target='_blank'>
         <AiFillGithub className='transition-all duration-300 hover:text-pantone hover:scale-125 cursor-pointer' />
-      </a>
+      </Link>
 
-      <a href='mailto:nick.jxw@gmail.com' target='_blank'>
+      <Link to='mailto:nick.jxw@gmail.com' target='_blank'>
         <AiOutlineMail className='transition-all duration-300 hover:text-pantone hover:scale-125 cursor-pointer' />
-      </a>
+      </Link>
 
       <div className='w-[1px] h-20 bg-pantone hidden md:block'></div>
     </div>
