@@ -18,18 +18,18 @@ const Hero = ({ setActivePath }) => {
       </div>
 
       <div className='flex flex-col justify-center items-center relative z-10 mt-28 md:items-start'>
-        <h5 className='text-light_primary text-xl'>Hello, I'm</h5>
+        {/* <h5 className='text-light_primary text-xl'>Hello, I'm</h5> */}
         <h1 className='text-4xl text-center py-2 text-light_primary font-bold md:text-6xl md:pb-6 md:text-left'>
-          CHIN-HSUEH (NICK) WANG
+          Front-End <span className='text-pantone'>React</span> Developer
         </h1>
-        <h2 className='text-light_primary text-2xl py-2 md:text-4xl md:pb-6'>
+        {/* <h2 className='text-light_primary text-2xl py-2 md:text-4xl md:pb-6'>
           <span className='text-pantone text-xl md:text-4xl'>
-            Unity / Front-End Developer
+            CHIN-HSUEH (NICK) WANG
           </span>
-        </h2>
+        </h2> */}
         <p className='text-md py-5 leading-8 text-center text-light_primary max-w-xl md:text-2xl md:pb-6 md:mb-15 md:text-left'>
-          I enjoy solving technical problems, researching, and learning new
-          technologies.
+          Hi, I'm Chin-hsueh (Nick) Wang who is passionate about front-end
+          development and has a background in interaction design.
         </p>
         <div className='mt-6'>
           <Link
